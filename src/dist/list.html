@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트관리 시스템</title>
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+  <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../plugins/jquery/dist/jquery.min.js"></script>
+  <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../../js/ui_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <header class="header">
+  <div class="util">
+    <span>관리자님 반갑습니다.</span>
+    <ul class="util_list">
+      <li><button type="button">내정보</button></li>
+      <li><button type="button">로그아웃</button></li>
+    </ul>
+  </div>
+  <nav class="nav">
+    <h1><a href=""><b>프로젝트</b> 관리시스템</a></h1>
+    <ul class="gnb" role="navigation">      
+      <li class="on"><a href="">메뉴1</a>
+        <ul class="sub">
+          <li class="on"><a href="">서브1</a></li>
+          <li><a href="">서브2</a></li>
+          <li><a href="">서브3</a></li>
+        </ul>
+      </li>
+      <li><a href="">메뉴2</a></li>
+      <li><a href="">메뉴3</a></li>
+      <li><a href="">메뉴4</a></li>
+    </ul>
+  </nav>
+</header>  
+  <div class="cont">
+    <div class="tit">
+      <h2>요구사항관리</h2>
+    </div>
+    <div class="contents">
+      <div class="search">
+        <div class="search_list">
+          <ul>
+            <li>
+              <span class="label">날자</span>
+              <span class="date_wrap">
+                <input type="text" name="date1" class="date" dataformat="datepic" />
+              </span>
+            </li>
+            <li>
+              <span class="label">기간</span>
+              <span class="period period_multi">
+                <input type="text" name="date1" class="date from" dataformat="from" />
+                <input type="text" name="date1" class="date to" dataformat="to" />
+              </span>
+            </li>
+            <li>
+              <label for="">콤보박스</label>
+              <select name="" id="">
+                <option value="">옵션</option>
+              </select>
+            </li>
+            <li>
+              <label for="">텍스트박스</label>
+              <input type="text" placeholder="검색어" />
+            </li>
+          </ul>
+          <ul>
+            <li class="in_label">
+              <span class="label">라디오</span>
+              <label for="PGA"><input type="radio" name="wave_type" id="PGA">PGA</label>
+              <label for="mini-SEED(100)"><input type="radio" name="wave_type" id="mini-SEED(100)">mini-SEED(100)</label>
+              <label for="mini-SEED(20)"><input type="radio" name="wave_type" id="mini-SEED(20)">mini-SEED(20)</label>
+            </li>
+            <li class="in_label">
+              <span class="label blind">체크</span>
+              <label for=""><input type="checkbox">체크1</label>
+              <label for=""><input type="checkbox">체크2</label>
+              <label for=""><input type="checkbox">체크3</label>
+            </li>
+          </ul>
+        </div>
+        <div class="btn_wrap">
+          <button type="button" class="btn btn_blue">검색</button>
+        </div>
+      </div>
+      <div class="section">
+        <div class="tbl_wrap">
+          <div class="tbl_top">
+            <div class="data_num">
+              <b>1005</b>건
+            </div>
+            <div class="btn_wrap">
+              <button type="button" class="btn_ico btn_greenline btn_excel">엑셀</button>            
+              <button type="button" class="btn_ico btn_blueline btn_txt">보고서</button>            
+            </div>
+          </div>
+          <table class="tbl_default tbl_hover">
+            <caption>요구사항 목록</caption>
+            <thead>
+              <tr>
+                <th scope="col">요구사항 ID</th>
+                <th scope="col">상태</th>
+                <th scope="col">내용</th>
+                <th scope="col">담당자</th>
+                <th scope="col">유스케이스</th>
+                <th scope="col">..</th>
+                <th scope="col">..</th>
+                <th scope="col">상세</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="alignL">R0020</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button type="button" class="axi btn_dtl">상세보기</button></td>
+              </tr>
+              <tr>
+                <td class="alignL">R0021</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button type="button" class="axi btn_dtl">상세보기</button></td>
+              </tr>
+              <tr>
+                <td class="alignL">R0022</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button type="button" class="axi btn_dtl">상세보기</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="paginate">
+  <a href="#" class="first" title="처음">〈〈</a>
+  <a href="#" class="pre" title="이전">〈</a>
+  <span>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <strong>6</strong>
+  <a href="#">7</a>
+  <a href="#">8</a>
+  <a href="#">9</a>
+  <a href="#">10</a>
+  </span>
+  <a href="#" class="next" title="다음">〉</a>
+  <a href="#" class="last" title="마지막">〉〉</a>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <footer class="footer">
+  <p>Copyright ⓒ2021 KITValley Co.,Ltd. All right reserved.</p>
+</footer>
+</div>  
+</body>
+</html>

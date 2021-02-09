@@ -1,0 +1,122 @@
+@@include('inc/top.html')
+<body>
+<div id="wrap">
+  @@include('inc/header.html')  
+  <div class="cont">
+    <div class="tit">
+      <h2>요구사항관리</h2>
+    </div>
+    <div class="contents">
+      <div class="search">
+        <div class="search_list">
+          <ul>
+            <li>
+              <span class="label">날자</span>
+              <span class="date_wrap">
+                <input type="text" name="date1" class="date" dataformat="datepic" />
+              </span>
+            </li>
+            <li>
+              <span class="label">기간</span>
+              <span class="period period_multi">
+                <input type="text" name="date1" class="date from" dataformat="from" />
+                <input type="text" name="date1" class="date to" dataformat="to" />
+              </span>
+            </li>
+            <li>
+              <label for="">콤보박스</label>
+              <select name="" id="">
+                <option value="">옵션</option>
+              </select>
+            </li>
+            <li>
+              <label for="">텍스트박스</label>
+              <input type="text" placeholder="검색어" />
+            </li>
+          </ul>
+          <ul>
+            <li class="in_label">
+              <span class="label">라디오</span>
+              <label for="PGA"><input type="radio" name="wave_type" id="PGA">PGA</label>
+              <label for="mini-SEED(100)"><input type="radio" name="wave_type" id="mini-SEED(100)">mini-SEED(100)</label>
+              <label for="mini-SEED(20)"><input type="radio" name="wave_type" id="mini-SEED(20)">mini-SEED(20)</label>
+            </li>
+            <li class="in_label">
+              <span class="label blind">체크</span>
+              <label for=""><input type="checkbox">체크1</label>
+              <label for=""><input type="checkbox">체크2</label>
+              <label for=""><input type="checkbox">체크3</label>
+            </li>
+          </ul>
+        </div>
+        <div class="btn_wrap">
+          <button type="button" class="btn btn_blue">검색</button>
+        </div>
+      </div>
+      <div class="section">
+        <div class="tbl_wrap">
+          <div class="tbl_top">
+            <div class="data_num">
+              <b>1005</b>건
+            </div>
+            <div class="btn_wrap">
+              <button type="button" class="btn_ico btn_greenline btn_excel">엑셀</button>            
+              <button type="button" class="btn_ico btn_blueline btn_txt">보고서</button>            
+            </div>
+          </div>
+          <table class="tbl_default tbl_hover">
+            <caption>요구사항 목록</caption>
+            <thead>
+              <tr>
+                <th scope="col">요구사항 ID</th>
+                <th scope="col">상태</th>
+                <th scope="col">내용</th>
+                <th scope="col">담당자</th>
+                <th scope="col">유스케이스</th>
+                <th scope="col">..</th>
+                <th scope="col">..</th>
+                <th scope="col">상세</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="alignL">R0020</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button type="button" class="axi btn_dtl">상세보기</button></td>
+              </tr>
+              <tr>
+                <td class="alignL">R0021</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button type="button" class="axi btn_dtl">상세보기</button></td>
+              </tr>
+              <tr>
+                <td class="alignL">R0022</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button type="button" class="axi btn_dtl">상세보기</button></td>
+              </tr>
+            </tbody>
+          </table>
+          @@include('inc/paginate.html')
+        </div>
+      </div>
+    </div>
+  </div>  
+  @@include('inc/footer.html')
+</div>  
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "rfp_admin",
+  "version": "1.0.0",
+  "description": "프로젝트 관리시스템",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahwasa/rfp_admin.git"
+  },
+  "author": "kitvalley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahwasa/rfp_admin/issues"
+  },
+  "homepage": "https://github.com/sahwasa/rfp_admin#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1"
+  }
+}

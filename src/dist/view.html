@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트관리 시스템</title>
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+  <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../plugins/jquery/dist/jquery.min.js"></script>
+  <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../../js/ui_common.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <header class="header">
+  <div class="util">
+    <span>관리자님 반갑습니다.</span>
+    <ul class="util_list">
+      <li><button type="button">내정보</button></li>
+      <li><button type="button">로그아웃</button></li>
+    </ul>
+  </div>
+  <nav class="nav">
+    <h1><a href=""><b>프로젝트</b> 관리시스템</a></h1>
+    <ul class="gnb" role="navigation">      
+      <li class="on"><a href="">메뉴1</a>
+        <ul class="sub">
+          <li class="on"><a href="">서브1</a></li>
+          <li><a href="">서브2</a></li>
+          <li><a href="">서브3</a></li>
+        </ul>
+      </li>
+      <li><a href="">메뉴2</a></li>
+      <li><a href="">메뉴3</a></li>
+      <li><a href="">메뉴4</a></li>
+    </ul>
+  </nav>
+</header>  
+  <div class="cont">
+    <div class="tit">
+      <button type="button" class="axi btn_back" title="목록">목록</button><h2>요구사항관리 상세보기</h2>
+    </div>
+    <div class="contents rfp_dtl">
+      <div class="flex_wrap f_sb">
+        <div class="section">
+          <div class="article">
+            <div class="tit blind">
+              <h3>요구사항 상세</h3>
+            </div>
+            <div class="section section_l">
+              <ul class="dashboard">
+                <li>
+                  <b class="label">RFPID</b>
+                  RFP_001_03
+                </li>
+                <li>
+                  <b class="label">등록일</b>
+                  2021-04-23
+                </li>
+                <li>
+                  <b class="label">담당자</b>
+                  김담당
+                </li>
+                <li>
+                  <b class="label">현업담당자</b>
+                  최현업
+                </li>
+              </ul>
+              <p class="box_gray">
+                내용~~~~
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section section_r">
+          <div class="article box_grayline add_progress">
+            <div class="tit">
+              <h3>진행내역 입력영역</h3>
+            </div>
+            <div class="section">
+              <div class="flex_wrap f_sb">
+                <div class="section section_l">
+                  <div class="sel_progress_type">
+                    <label for="s_scene"><input type="radio" name="s" id="s_scene">화면정의ID</label>
+                    <label for="s_svn"><input type="radio" name="s" id="s_svn">SVN</label>
+                    <label for="s_class"><input type="radio" name="s" id="s_class">클래스D번호</label>
+                    <label for="s_default"><input type="radio" name="s" id="s_default" checked>일반</label>
+                  </div>
+                  <textarea name="" id="" cols="30" rows="10" class="full">내용
+                  </textarea>
+                </div>
+                <div class="section section_r">
+                  <ul class="attach_list">
+                    <li>
+                      <input type="text" id="" name="" class="file_text" readonly="" role="filePath" title="첨부폴더 경로">
+                      <span class="file_wrap btn btn_blueline">첨부1<input type="file" role="fileAdd" class="file_add"></span>
+                    </li>
+                    <li>
+                      <input type="text" id="" name="" class="file_text" readonly="" role="filePath" title="첨부폴더 경로">
+                      <span class="file_wrap btn btn_blueline">첨부2<input type="file" role="fileAdd" class="file_add"></span>
+                    </li>
+                    <li>
+                      <input type="text" id="" name="" class="file_text" readonly="" role="filePath" title="첨부폴더 경로">
+                      <span class="file_wrap btn btn_blueline">첨부3<input type="file" role="fileAdd" class="file_add"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn_wrap alignR">
+                <button type="button" class="btn btn_red">추가</button>
+                <button type="button" class="btn btn_red">저장</button>
+                <button type="button" class="btn btn_gray">취소</button>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="tit">
+              <h3>진행내역</h3>
+            </div>
+            <div class="section">
+              <div class="progress_itm default">
+                <div class="label">
+                  <span>일반</span>
+                  <span class="btn_wrap">
+                    <button type="button" class="axi btn_edit" title="수정">수정</button>
+                    <button type="button" class="axi btn_del" title="삭제">삭제</button>
+                  </span>
+                </div>
+                <p>내용</p>
+                <ul class="attached_list">
+                  <li><a href="">abcdefg.exe</a><button type="button" class="axi btn_del">삭제</button></li>
+                </ul>
+              </div>
+              <div class="progress_itm default">
+                <div class="label"><span>일반</span>
+                  <span class="btn_wrap">
+                    <button type="button" class="axi btn_edit" title="수정">수정</button>
+                    <button type="button" class="axi btn_del" title="삭제">삭제</button>
+                  </span>
+                </div>
+                <p>내용</p>
+                <ul class="attached_list">
+                  <li><a href="">abcdefg.exe</a><button type="button" class="axi btn_del">삭제</button></li>
+                </ul>
+              </div>
+              
+              <div class="progress_itm scene">
+                <div class="label"><span>화면정의ID</span>#SCENE_1.3.8
+                  <span class="btn_wrap">
+                    <button type="button" class="axi btn_edit" title="수정">수정</button>
+                    <button type="button" class="axi btn_del" title="삭제">삭제</button>
+                  </span>
+                </div>
+                <p>내용</p>
+                <ul class="attached_list">
+                  <li><a href="">abcdefg.exe</a><button type="button" class="axi btn_del">삭제</button></li>
+                  <li><a href="">abc.jpg</a><button type="button" class="axi btn_del">삭제</button></li>
+                  <li><a href="">abcdefg.pdf</a><button type="button" class="axi btn_del">삭제</button></li>
+                </ul>
+              </div>
+              <div class="progress_itm default">
+                <div class="label"><span>일반</span>
+                  <span class="btn_wrap">
+                    <button type="button" class="axi btn_edit" title="수정">수정</button>
+                    <button type="button" class="axi btn_del" title="삭제">삭제</button>
+                  </span>
+                </div>
+                <p>내용</p>
+                <ul class="attached_list">
+                  <li><a href="">abcdefg.exe</a><button type="button" class="axi btn_del">삭제</button></li>
+                </ul>
+              </div>
+              <div class="progress_itm class_name">
+                <div class="label"><span>클래스 D번호</span>#SCENE_1.3.8
+                  <span class="btn_wrap">
+                    <button type="button" class="axi btn_edit" title="수정">수정</button>
+                    <button type="button" class="axi btn_del" title="삭제">삭제</button>
+                  </span>
+                </div>
+                <p>내용</p>
+                <ul class="attached_list">
+                  <li><a href="">abcdefg.exe</a><button type="button" class="axi btn_del">삭제</button></li>
+                </ul>
+              </div>
+              <div class="progress_itm svn">
+                <div class="label"><span>SVN번호</span>rev122
+                  <span class="btn_wrap">
+                    <button type="button" class="axi btn_edit" title="수정">수정</button>
+                    <button type="button" class="axi btn_del" title="삭제">삭제</button>
+                  </span>
+                </div>
+                <p>내용</p>
+                <ul class="attached_list">
+                  <li><a href="">abcdefg.exe</a><button type="button" class="axi btn_del">삭제</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="tit">
+              <h3>SVN</h3>
+            </div>
+            <div class="section">
+              <ul class="svn_list">
+                <li>
+                  <span class="label">rev122</span>
+                  <p class="commit_msg">
+                    커밋메시지
+                  </p>
+                  <ul class="change_list">
+                    <li>a.java</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <footer class="footer">
+  <p>Copyright ⓒ2021 KITValley Co.,Ltd. All right reserved.</p>
+</footer>
+</div>  
+</body>
+</html>
